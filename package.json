@@ -16,6 +16,11 @@
         "label": "astrobloom",
         "uiTheme": "vs-dark",
         "path": "./themes/astrobloom-color-theme.json"
+      },
+      {
+        "label": "astrobloom bold",
+        "uiTheme": "vs-dark",
+        "path": "./themes/astrobloom-bold-theme.json"
       }
     ]
   },
