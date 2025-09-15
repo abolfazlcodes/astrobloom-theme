@@ -1,0 +1,27 @@
+{
+  "name": "astrobloom",
+  "displayName": "Astrobloom",
+  "description": "A mellow astrobloom color theme which makes you feel good working with it. It is  based  on high contrast color palettes.",
+  "version": "1.0.0",
+  "publisher": "abolfazlcodes",
+  "engines": {
+    "vscode": "^1.104.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "astrobloom",
+        "uiTheme": "vs-dark",
+        "path": "./themes/astrobloom-color-theme.json"
+      }
+    ]
+  },
+  "keywords": [
+    "theme",
+    "galactic",
+    "color-theme"
+  ]
+}
