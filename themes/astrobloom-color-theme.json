@@ -3,12 +3,12 @@
   "colors": {
     // Editor
     "focusBorder": "#1a1a1a",
-    "editor.background": "#1f1f1f",
+    "editor.background": "#222222",
     "editor.foreground": "#fff",
-    "editorCursor.foreground": "#E0F0FF",
+    "editorCursor.foreground": "#dfdfdf",
     "editor.lineHighlightBackground": "#4949492a",
     "editor.selectionHighlightBackground": "#7C9EFF40",
-    "editor.selectionBackground": "#746f777a",
+    "editor.selectionBackground": "#746f7757",
     "errorForeground": "#FC644D",
 
     "editorError.foreground": "#FC644D",
@@ -24,25 +24,25 @@
 
     // Side Bar
     "sideBar.background": "#191919",
-    "sideBar.foreground": "#E0F0FF",
-    "sideBarTitle.foreground": "#fff",
+    "sideBar.foreground": "#dfdfdf",
+    "sideBarTitle.foreground": "#dfdfdf",
 
     // Status Bar
     "statusBar.background": "#00ffc8",
     "statusBar.foreground": "#1a1a1a",
-    "statusBar.noFolderBackground": "#efcb68",
+    "statusBar.noFolderBackground": "#FFD66D",
     "statusBar.debuggingBackground": "#FF5370",
-    "statusBar.debuggingForeground": "#E0F0FF",
+    "statusBar.debuggingForeground": "#dfdfdf",
 
     // Tabs
     "tab.activeBackground": "#1a1a1a",
     "tab.activeForeground": "#fff",
-    "tab.inactiveBackground": "#1a1a1a",
+    "tab.inactiveBackground": "#222222",
     "tab.inactiveForeground": "#65737E",
 
     // Title Bar
     "titleBar.activeBackground": "#191919",
-    "titleBar.activeForeground": "#E0F0FF",
+    "titleBar.activeForeground": "#dfdfdf",
     "titleBar.inactiveBackground": "#191919",
     "titleBar.inactiveForeground": "#65737E",
 
@@ -52,10 +52,10 @@
     "button.hoverBackground": "#6699FF",
 
     // Minimap
-    "minimap.background": "#1f1f1f",
+    "minimap.background": "#222222",
 
     // Editor Gutter
-    "editorGutter.background": "#1f1f1f",
+    "editorGutter.background": "#222222",
 
     // Terminal
     "terminal.background": "#1f1f1f",
@@ -67,7 +67,7 @@
     "scrollbarSlider.activeBackground": "#65737EFF",
 
     // Dropdowns / Lists
-    "dropdown.background": "#191919",
+    "dropdown.background": "#222222",
     "dropdown.foreground": "#fff",
     "list.activeSelectionBackground": "#383838",
     "list.activeSelectionForeground": "#fff",
@@ -78,7 +78,7 @@
     "peekViewEditor.background": "#1f1f1f",
     "peekViewResult.background": "#1f1f1f",
     "peekViewTitle.background": "#191919",
-    "peekViewTitleLabel.foreground": "#E0F0FF",
+    "peekViewTitleLabel.foreground": "#dfdfdf",
 
     // Diff editor
     "diffEditor.insertedTextBackground": "#C3E88D40",
@@ -120,7 +120,7 @@
       "name": "Variables",
       "scope": ["variable.name", "variable"],
       "settings": {
-        "foreground": "#E0F0FF"
+        "foreground": "#f0f0f0"
       }
     },
     {
@@ -132,7 +132,13 @@
     },
     {
       "name": "Keyword, Storage",
-      "scope": ["keyword", "keyword.operator.new"],
+      "scope": [
+        "keyword",
+        "keyword.operator.new",
+        "variable.language.this",
+        "variable.language.this.js",
+        "variable.language.this.ts"
+      ],
       "settings": {
         "foreground": "#fc618d"
       }
@@ -151,20 +157,7 @@
         "foreground": "#89DDFF"
       }
     },
-    {
-      "name": "Numbers",
-      "scope": ["constant.numeric", "meta.class", "meta.function"],
-      "settings": {
-        "foreground": "#08CFFF"
-      }
-    },
-    {
-      "name": "Numbers",
-      "scope": ["meta.function-call"],
-      "settings": {
-        "foreground": "#00ffc8"
-      }
-    },
+
     {
       "name": "Template Literals",
       "scope": [
@@ -176,7 +169,7 @@
         "punctuation.terminator"
       ],
       "settings": {
-        "foreground": "#96e072"
+        "foreground": "#FFE66D"
       }
     },
     {
@@ -234,16 +227,6 @@
       }
     },
     {
-      "name": "Tag Brackets",
-      "scope": [
-        "punctuation.definition.tag.begin.html",
-        "punctuation.definition.tag.end.html"
-      ],
-      "settings": {
-        "foreground": "#bad761"
-      }
-    },
-    {
       "name": "Braces and Brackets",
       "scope": [
         "punctuation.section.block.begin",
@@ -255,16 +238,23 @@
         "variable.parameter"
       ],
       "settings": {
-        "foreground": "#00ffc8"
+        "foreground": "#08CFFF"
       }
     },
     {
       "name": "Variable Definitions",
-      "scope": ["variable.other.constant"],
+      "scope": [
+        "variable.other.constant",
+        "constant.numeric",
+        "constant.numeric.float",
+        "constant.numeric.integer",
+        "constant.numeric.hex"
+      ],
       "settings": {
-        "foreground": "#89DDFF"
+        "foreground": "#08CFFF"
       }
     },
+
     {
       "name": "Text Color",
       "scope": [
@@ -276,6 +266,69 @@
       ],
       "settings": {
         "foreground": "#D5CED9"
+      }
+    },
+    {
+      "name": "Async/Await/Export/Import Keywords",
+      "scope": [
+        "keyword.control.async",
+        "keyword.control.await",
+        "keyword.control.import",
+        "keyword.control.export",
+        "storage.modifier"
+      ],
+      "settings": {
+        "foreground": "#fc618d"
+      }
+    },
+    {
+      "name": "Object Keys",
+      "scope": [
+        "meta.object-literal.key",
+        "support.type.property-name.json",
+        "support.type.property-name"
+      ],
+      "settings": {
+        "foreground": "#E0F0FF",
+        "fontStyle": ""
+      }
+    },
+    {
+      "name": "Numbers",
+      "scope": [
+        "constant.character",
+        "constant.other",
+        "meta.number",
+        "meta.function-call",
+        "meta.class",
+        "entity.name.function"
+      ],
+      "settings": {
+        "foreground": "#00ffc8"
+      }
+    },
+    {
+      "name": "HTML/JSX Tag",
+      "scope": [
+        "entity.name.tag",
+        "meta.tag",
+        "meta.tag.sgml",
+        "markup.tag",
+        "punctuation.definition.tag"
+      ],
+      "settings": {
+        "foreground": "#fc618d"
+      }
+    },
+    {
+      "name": "Tag punctuation",
+      "scope": [
+        "punctuation.definition.tag.html",
+        "punctuation.definition.tag.begin",
+        "punctuation.definition.tag.end"
+      ],
+      "settings": {
+        "foreground": "#8b888f"
       }
     }
   ]
