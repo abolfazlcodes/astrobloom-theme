@@ -2,10 +2,10 @@
   "name": "AstroBloom",
   "colors": {
     // Editor
-    "focusBorder": "#222222",
-    "editor.background": "#222222",
-    "editor.foreground": "#E0F0FF",
-    "editorCursor.foreground": "#fcb93c",
+    "focusBorder": "#1a1a1a",
+    "editor.background": "#1f1f1f",
+    "editor.foreground": "#fff",
+    "editorCursor.foreground": "#E0F0FF",
     "editor.lineHighlightBackground": "#4949492a",
     "editor.selectionHighlightBackground": "#7C9EFF40",
     "editor.selectionBackground": "#746f777a",
@@ -18,26 +18,26 @@
 
     // Activity Bar
     "activityBar.background": "#191919",
-    "activityBar.foreground": "#E0F0FF",
-    "activityBarBadge.background": "#fcb93c",
+    "activityBar.foreground": "#fff",
+    "activityBarBadge.background": "#00ffc8",
     "activityBarBadge.foreground": "#000814",
 
     // Side Bar
     "sideBar.background": "#191919",
     "sideBar.foreground": "#E0F0FF",
-    "sideBarTitle.foreground": "#E0F0FF",
+    "sideBarTitle.foreground": "#fff",
 
     // Status Bar
-    "statusBar.background": "#fcb93c",
-    "statusBar.foreground": "#222222",
+    "statusBar.background": "#00ffc8",
+    "statusBar.foreground": "#1a1a1a",
     "statusBar.noFolderBackground": "#efcb68",
     "statusBar.debuggingBackground": "#FF5370",
     "statusBar.debuggingForeground": "#E0F0FF",
 
     // Tabs
-    "tab.activeBackground": "#222222",
-    "tab.activeForeground": "#E0F0FF",
-    "tab.inactiveBackground": "#222222",
+    "tab.activeBackground": "#1a1a1a",
+    "tab.activeForeground": "#fff",
+    "tab.inactiveBackground": "#1a1a1a",
     "tab.inactiveForeground": "#65737E",
 
     // Title Bar
@@ -47,18 +47,19 @@
     "titleBar.inactiveForeground": "#65737E",
 
     // Buttons
-    "button.background": "#C792EA",
+    "button.background": "#89DDFF",
     "button.foreground": "#000",
     "button.hoverBackground": "#6699FF",
 
     // Minimap
-    "minimap.background": "#222222",
+    "minimap.background": "#1f1f1f",
 
     // Editor Gutter
-    "editorGutter.background": "#222222",
+    "editorGutter.background": "#1f1f1f",
 
     // Terminal
-    "terminal.background": "#222222",
+    "terminal.background": "#1f1f1f",
+    "terminal.foreground": "#fff",
 
     // Scrollbars
     "scrollbarSlider.background": "#65737E40",
@@ -66,17 +67,17 @@
     "scrollbarSlider.activeBackground": "#65737EFF",
 
     // Dropdowns / Lists
-    "dropdown.background": "#222222",
-    "dropdown.foreground": "#E0F0FF",
-    "list.activeSelectionBackground": "#1B1B33",
-    "list.activeSelectionForeground": "#E0F0FF",
-    "list.hoverBackground": "#1B1B33",
-    "list.hoverForeground": "#E0F0FF",
+    "dropdown.background": "#191919",
+    "dropdown.foreground": "#fff",
+    "list.activeSelectionBackground": "#383838",
+    "list.activeSelectionForeground": "#fff",
+    "list.hoverBackground": "#383838",
+    "list.hoverForeground": "#fff",
 
     // Peek / Find
-    "peekViewEditor.background": "#222222",
-    "peekViewResult.background": "#222222",
-    "peekViewTitle.background": "#222222",
+    "peekViewEditor.background": "#1f1f1f",
+    "peekViewResult.background": "#1f1f1f",
+    "peekViewTitle.background": "#191919",
     "peekViewTitleLabel.foreground": "#E0F0FF",
 
     // Diff editor
@@ -90,9 +91,9 @@
 
     // suggestion modal:
     "editorSuggestWidget.background": "#222222",
-    "editorSuggestWidget.foreground": "#E0F0FF",
+    "editorSuggestWidget.foreground": "#fff",
     "editorSuggestWidget.border": "#222222",
-    "editorSuggestWidget.highlightForeground": "#08CFFF",
+    "editorSuggestWidget.highlightForeground": "#89DDFF",
     "editorSuggestWidget.selectedBackground": "#37373D"
   },
   "tokenColors": [
@@ -100,7 +101,7 @@
       "name": "Comment",
       "scope": ["comment", "punctuation.definition.comment"],
       "settings": {
-        "foreground": "#A0A1A7cc",
+        "foreground": "#858585",
         "fontStyle": "italic"
       }
     },
@@ -133,7 +134,7 @@
       "name": "Keyword, Storage",
       "scope": ["keyword", "keyword.operator.new"],
       "settings": {
-        "foreground": "#00ffc8"
+        "foreground": "#fc618d"
       }
     },
     {
@@ -147,7 +148,7 @@
         "keyword.other"
       ],
       "settings": {
-        "foreground": "#fcb93c"
+        "foreground": "#89DDFF"
       }
     },
     {
@@ -161,7 +162,7 @@
       "name": "Numbers",
       "scope": ["meta.function-call"],
       "settings": {
-        "foreground": "#08CFFF"
+        "foreground": "#00ffc8"
       }
     },
     {
@@ -175,14 +176,14 @@
         "punctuation.terminator"
       ],
       "settings": {
-        "foreground": "#FFE66D"
+        "foreground": "#96e072"
       }
     },
     {
       "name": "Variable Storage Keywords",
       "scope": ["storage.type"],
       "settings": {
-        "foreground": "#C792EA"
+        "foreground": "#c74ded"
       }
     },
     {

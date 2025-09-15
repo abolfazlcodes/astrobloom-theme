@@ -2,7 +2,7 @@
   "name": "astrobloom",
   "displayName": "Astrobloom",
   "description": "A mellow astrobloom color theme which makes you feel good working with it. It is  based  on high contrast color palettes.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "abolfazlcodes",
   "engines": {
     "vscode": "^1.104.0"
@@ -23,5 +23,8 @@
     "theme",
     "galactic",
     "color-theme"
-  ]
+  ],
+  "repository": {
+    "url": "https://github.com/abolfazlcodes/astrobloom-theme"
+  }
 }
