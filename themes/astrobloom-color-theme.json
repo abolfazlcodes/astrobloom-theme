@@ -154,7 +154,7 @@
         "keyword.other"
       ],
       "settings": {
-        "foreground": "#89DDFF"
+        "foreground": "#08CFFF"
       }
     },
 
@@ -165,8 +165,7 @@
         "string.quoted",
         "string.quoted.double",
         "string.quoted.triple",
-        "string.quoted.single",
-        "punctuation.terminator"
+        "string.quoted.single"
       ],
       "settings": {
         "foreground": "#FFE66D"
@@ -217,6 +216,13 @@
       "settings": {
         "foreground": "#89DDFF",
         "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Terminator for punctuation",
+      "scope": ["punctuation.terminator"],
+      "settings": {
+        "foreground": "#89DDFF"
       }
     },
     {
@@ -329,6 +335,18 @@
       ],
       "settings": {
         "foreground": "#8b888f"
+      }
+    },
+    {
+      "name": "Dot Accessor",
+      "scope": [
+        "punctuation.accessor.js",
+        "support.type.object.module.js",
+        "support.type.object.exports.js",
+        "punctuation.accessor.js"
+      ],
+      "settings": {
+        "foreground": "#fc618d"
       }
     }
   ]
