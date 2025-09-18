@@ -4,6 +4,7 @@
   "description": "A mellow astrobloom color theme which makes you feel good working with it. It is  based  on high contrast color palettes.",
   "version": "1.3.0",
   "publisher": "abolfazlcodes",
+  "icon": "images/astrobloom-logo.png",
   "engines": {
     "vscode": "^1.104.0"
   },
